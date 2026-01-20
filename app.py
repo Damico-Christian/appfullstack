@@ -1,9 +1,9 @@
 #import dellla classe Flask da flask
-from flask import Flask, jsonify
-from flask_cors import CORS
+from flask import Flask, jsonify # type: ignore
+from flask_cors import CORS # type: ignore
 #inizializziamo flask
 #'app' rappresenta il nostro server
-app = Flask(__name__)
+app = Flask(__name__) 
 CORS(app)
 #il decoratore route definisce gli ENDPOINT
 #"quando siamo alla route "/" richiama il metodo associato"
